@@ -6,10 +6,9 @@ class FriendsController < ApplicationController
   # GET /friends or /friends.json
   def index
     
-      #user_loged_in
-      @friends = Friend.where("user_id = #{current_user.id}")
-      #@friends = Friend.all
-    
+    #user_loged_in
+    @friends = Friend.where("user_id = #{current_user.id}")
+    #@friends = Friend.all
   end
 
   # GET /friends/1 or /friends/1.json
